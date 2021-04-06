@@ -41,6 +41,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CicleDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""52205eb2-8786-4625-91aa-92b43a352ce1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CicleUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""032866bd-d7fc-47ac-9330-b88da930f614"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +136,28 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Power"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f41ec9a8-b2e9-454f-ac51-a383b59e728b"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CicleDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27672a47-494c-41ab-90a6-a97b320d4ac8"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CicleUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -147,6 +185,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": ""Power"",
                     ""type"": ""Button"",
                     ""id"": ""62ae706a-eb66-40fc-a3f4-fbd79a0960e4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CicleDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""2de00904-8f63-487a-ad0e-71e5d7d324a3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CicleUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""e778f276-3348-40aa-bb96-1aa95dabc602"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -229,6 +283,28 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Power"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f14326dc-6ef1-4eb3-b230-1ac39bc74495"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CicleDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38c508fb-d98c-458a-a585-9cbe48b50cfe"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CicleUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -240,11 +316,15 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Player_Horizontal = m_Player.FindAction("Horizontal", throwIfNotFound: true);
         m_Player_Vertical = m_Player.FindAction("Vertical", throwIfNotFound: true);
         m_Player_Power = m_Player.FindAction("Power", throwIfNotFound: true);
+        m_Player_CicleDown = m_Player.FindAction("CicleDown", throwIfNotFound: true);
+        m_Player_CicleUp = m_Player.FindAction("CicleUp", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Horizontal = m_Player2.FindAction("Horizontal", throwIfNotFound: true);
         m_Player2_Vertical = m_Player2.FindAction("Vertical", throwIfNotFound: true);
         m_Player2_Power = m_Player2.FindAction("Power", throwIfNotFound: true);
+        m_Player2_CicleDown = m_Player2.FindAction("CicleDown", throwIfNotFound: true);
+        m_Player2_CicleUp = m_Player2.FindAction("CicleUp", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -297,6 +377,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Horizontal;
     private readonly InputAction m_Player_Vertical;
     private readonly InputAction m_Player_Power;
+    private readonly InputAction m_Player_CicleDown;
+    private readonly InputAction m_Player_CicleUp;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -304,6 +386,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Horizontal => m_Wrapper.m_Player_Horizontal;
         public InputAction @Vertical => m_Wrapper.m_Player_Vertical;
         public InputAction @Power => m_Wrapper.m_Player_Power;
+        public InputAction @CicleDown => m_Wrapper.m_Player_CicleDown;
+        public InputAction @CicleUp => m_Wrapper.m_Player_CicleUp;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -322,6 +406,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
                 @Power.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
                 @Power.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @CicleDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleDown;
+                @CicleDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleDown;
+                @CicleDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleDown;
+                @CicleUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleUp;
+                @CicleUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleUp;
+                @CicleUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCicleUp;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -335,6 +425,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started += instance.OnPower;
                 @Power.performed += instance.OnPower;
                 @Power.canceled += instance.OnPower;
+                @CicleDown.started += instance.OnCicleDown;
+                @CicleDown.performed += instance.OnCicleDown;
+                @CicleDown.canceled += instance.OnCicleDown;
+                @CicleUp.started += instance.OnCicleUp;
+                @CicleUp.performed += instance.OnCicleUp;
+                @CicleUp.canceled += instance.OnCicleUp;
             }
         }
     }
@@ -346,6 +442,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player2_Horizontal;
     private readonly InputAction m_Player2_Vertical;
     private readonly InputAction m_Player2_Power;
+    private readonly InputAction m_Player2_CicleDown;
+    private readonly InputAction m_Player2_CicleUp;
     public struct Player2Actions
     {
         private @PlayerInputActions m_Wrapper;
@@ -353,6 +451,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Horizontal => m_Wrapper.m_Player2_Horizontal;
         public InputAction @Vertical => m_Wrapper.m_Player2_Vertical;
         public InputAction @Power => m_Wrapper.m_Player2_Power;
+        public InputAction @CicleDown => m_Wrapper.m_Player2_CicleDown;
+        public InputAction @CicleUp => m_Wrapper.m_Player2_CicleUp;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -371,6 +471,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
                 @Power.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
                 @Power.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
+                @CicleDown.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleDown;
+                @CicleDown.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleDown;
+                @CicleDown.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleDown;
+                @CicleUp.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleUp;
+                @CicleUp.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleUp;
+                @CicleUp.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnCicleUp;
             }
             m_Wrapper.m_Player2ActionsCallbackInterface = instance;
             if (instance != null)
@@ -384,6 +490,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started += instance.OnPower;
                 @Power.performed += instance.OnPower;
                 @Power.canceled += instance.OnPower;
+                @CicleDown.started += instance.OnCicleDown;
+                @CicleDown.performed += instance.OnCicleDown;
+                @CicleDown.canceled += instance.OnCicleDown;
+                @CicleUp.started += instance.OnCicleUp;
+                @CicleUp.performed += instance.OnCicleUp;
+                @CicleUp.canceled += instance.OnCicleUp;
             }
         }
     }
@@ -393,11 +505,15 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnHorizontal(InputAction.CallbackContext context);
         void OnVertical(InputAction.CallbackContext context);
         void OnPower(InputAction.CallbackContext context);
+        void OnCicleDown(InputAction.CallbackContext context);
+        void OnCicleUp(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
         void OnHorizontal(InputAction.CallbackContext context);
         void OnVertical(InputAction.CallbackContext context);
         void OnPower(InputAction.CallbackContext context);
+        void OnCicleDown(InputAction.CallbackContext context);
+        void OnCicleUp(InputAction.CallbackContext context);
     }
 }

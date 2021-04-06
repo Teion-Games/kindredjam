@@ -25,15 +25,47 @@ public class PlayerInput : MonoBehaviour
     {
         if(CheckPlayer())
         {
-            GetPlayer1MovmentInput();
-            if(inputActions.Player.Power.triggered) Debug.Log("Player1Power");
+            GetPlayer1Inputs();
         }
         else
         {
-            GetPlayer2MovmentInput();
-            if(inputActions.Player2.Power.triggered) Debug.Log("Player2Power");
+            GetPlayer2Inputs();
         }
         
+    }
+
+    void GetPlayer1Inputs()
+    {
+        GetPlayer1MovmentInput();
+        if(inputActions.Player.Power.triggered) 
+        {
+            GetComponent<PlayerPower>().UsePower();
+        }
+        if(inputActions.Player.CicleDown.triggered) 
+        {
+            GetComponent<PlayerPower>().CiclePowersDown();
+        }
+        if(inputActions.Player.CicleUp.triggered) 
+        {
+            GetComponent<PlayerPower>().CiclePowersUp();
+        }
+    }
+
+    void GetPlayer2Inputs()
+    {
+        GetPlayer2MovmentInput();
+        if(inputActions.Player2.Power.triggered)
+        {
+            GetComponent<PlayerPower>().UsePower();
+        }
+        if(inputActions.Player2.CicleDown.triggered) 
+        {
+            GetComponent<PlayerPower>().CiclePowersDown();
+        }
+        if(inputActions.Player2.CicleUp.triggered) 
+        {
+            GetComponent<PlayerPower>().CiclePowersUp();
+        }
     }
 
     void GetPlayer1MovmentInput()
