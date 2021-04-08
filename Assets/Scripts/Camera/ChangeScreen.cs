@@ -26,7 +26,6 @@ public class ChangeScreen : MonoBehaviour
 
     void ChangeScreens()
     {
-        Debug.Log("teste");
         if(isSplit)
         {
             p1Cam.gameObject.SetActive(false);

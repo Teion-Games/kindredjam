@@ -4,41 +4,17 @@ using UnityEngine;
 
 public class PlayerPower : MonoBehaviour
 {
-    public List<string> powerList= new List<string>();
-    public GameObject darkHole;
-    int activePower = 0 ;
+
+    public GameObject firstPower;
+    public GameObject secondPower;
 
     public void UsePower()
     {
-        switch (powerList[activePower])
-        {
-            case "first":
-                Instantiate(darkHole, transform.position, Quaternion.identity);
-                break;
-            case "fire":
-                Debug.Log("Firepower");
-                break;
-            case "water":
-                Debug.Log("waterpower");
-                break;
-        }        
+        Instantiate(firstPower, transform.position, Quaternion.identity);
     }
 
-    public void CiclePowersUp()
+    public void UseSecundaryPower()
     {
-        activePower++;
-        if(activePower>powerList.Count-1)
-        {
-            activePower = 0;
-        }
-    }
-
-    public void CiclePowersDown()
-    {
-        activePower--;
-        if(activePower < 0)
-        {
-            activePower = powerList.Count-1;
-        }
+        Instantiate(secondPower, transform.position, Quaternion.identity);
     }
 }

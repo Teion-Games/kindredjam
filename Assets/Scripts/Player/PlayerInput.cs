@@ -41,13 +41,9 @@ public class PlayerInput : MonoBehaviour
         {
             GetComponent<PlayerPower>().UsePower();
         }
-        if(inputActions.Player.CicleDown.triggered) 
+        if(inputActions.Player.SecundaryPower.triggered) 
         {
-            GetComponent<PlayerPower>().CiclePowersDown();
-        }
-        if(inputActions.Player.CicleUp.triggered) 
-        {
-            GetComponent<PlayerPower>().CiclePowersUp();
+            GetComponent<PlayerPower>().UseSecundaryPower();
         }
     }
 
@@ -58,13 +54,9 @@ public class PlayerInput : MonoBehaviour
         {
             GetComponent<PlayerPower>().UsePower();
         }
-        if(inputActions.Player2.CicleDown.triggered) 
+        if(inputActions.Player2.SecundaryPower.triggered) 
         {
-            GetComponent<PlayerPower>().CiclePowersDown();
-        }
-        if(inputActions.Player2.CicleUp.triggered) 
-        {
-            GetComponent<PlayerPower>().CiclePowersUp();
+            GetComponent<PlayerPower>().UseSecundaryPower();
         }
     }
 
@@ -96,7 +88,7 @@ public class PlayerInput : MonoBehaviour
 
     bool CheckPlayer()
     {
-        if(gameObject.name == "Player1")
+        if(gameObject.name == "Ein")
         {
             return true;
         }

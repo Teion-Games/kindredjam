@@ -30,17 +30,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "CicleDown",
+                    "name": "SecundaryPower",
                     "type": "Button",
                     "id": "52205eb2-8786-4625-91aa-92b43a352ce1",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "CicleUp",
-                    "type": "Button",
-                    "id": "032866bd-d7fc-47ac-9330-b88da930f614",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -116,7 +108,7 @@
                 {
                     "name": "",
                     "id": "bb0562aa-1a62-48f0-816f-417f254842b1",
-                    "path": "<Keyboard>/numpad0",
+                    "path": "<Keyboard>/numpad1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -127,22 +119,11 @@
                 {
                     "name": "",
                     "id": "f41ec9a8-b2e9-454f-ac51-a383b59e728b",
-                    "path": "<Keyboard>/numpad1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CicleDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "27672a47-494c-41ab-90a6-a97b320d4ac8",
                     "path": "<Keyboard>/numpad3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CicleUp",
+                    "action": "SecundaryPower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -177,17 +158,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "CicleDown",
+                    "name": "SecundaryPower",
                     "type": "Button",
                     "id": "2de00904-8f63-487a-ad0e-71e5d7d324a3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "CicleUp",
-                    "type": "Button",
-                    "id": "e778f276-3348-40aa-bb96-1aa95dabc602",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -263,7 +236,7 @@
                 {
                     "name": "",
                     "id": "dd7a60b1-5a7a-4489-b10a-d56050971f0c",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -274,22 +247,11 @@
                 {
                     "name": "",
                     "id": "f14326dc-6ef1-4eb3-b230-1ac39bc74495",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CicleDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "38c508fb-d98c-458a-a585-9cbe48b50cfe",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CicleUp",
+                    "action": "SecundaryPower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
