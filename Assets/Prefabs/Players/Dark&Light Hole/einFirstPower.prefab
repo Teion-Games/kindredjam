@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8939917792163708574}
   - component: {fileID: 8902195549797457014}
-  - component: {fileID: 8690090154620462981}
+  - component: {fileID: -2982743928337909864}
   m_Layer: 0
-  m_Name: secondHole
+  m_Name: firstPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,20 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8690090154620462981
+--- !u!114 &-2982743928337909864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485256955556593348}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7668f24294e603448ad0fd77140f1e8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 01318b6f733498043b4f49e98cd2be4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectRange: 4
-  suckableObjects:
+  explosionForce: 10
+  explosionRadius: 3.7
+  effectedObjects:
     serializedVersion: 2
     m_Bits: 512
-  spitSpeed: 4
