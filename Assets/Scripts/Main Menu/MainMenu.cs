@@ -5,11 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string game;
-    public string settings;
-    public string credits;
+    public GameObject game;
+    public GameObject settings;
+    public GameObject credits;
 
     public void Play(){
-        SceneManager.LoadScene(game);
+        game.SetActive(true);
+    }
+
+    public void Settings(){
+        settings.SetActive(true);
+    }
+
+    public void Credits(){
+        credits.SetActive(true);
+    }
+
+    public void Quit(){
+        Application.Quit();
     }
 }
