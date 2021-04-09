@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 381b4e274600b574ca5c3b5c5567f027
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Prologo.unity
+    guid: 744963c8613b31242b92df19f2c47740
   m_configObjects: {}

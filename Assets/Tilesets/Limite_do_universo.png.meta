@@ -1,7 +1,208 @@
 fileFormatVersion: 2
 guid: 567f64306a9a231488cde116fad29bd5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5023349144053427035
+    second: Limite_do_universo_0
+  - first:
+      213: 7302639545398613760
+    second: Limite_do_universo_1
+  - first:
+      213: -2285441834554111737
+    second: Limite_do_universo_2
+  - first:
+      213: 5042858653795009965
+    second: Limite_do_universo_3
+  - first:
+      213: -5506264672651823752
+    second: Limite_do_universo_4
+  - first:
+      213: -1683899043450955661
+    second: Limite_do_universo_5
+  - first:
+      213: 2201124690734108180
+    second: Limite_do_universo_6
+  - first:
+      213: 6750987589312457417
+    second: Limite_do_universo_7
+  - first:
+      213: 7260127949849688778
+    second: Limite_do_universo_8
+  - first:
+      213: 4561326619184523174
+    second: Limite_do_universo_9
+  - first:
+      213: -1334737133344858590
+    second: Limite_do_universo_10
+  - first:
+      213: -6173191177690901976
+    second: Limite_do_universo_11
+  - first:
+      213: -7299172430304399828
+    second: Limite_do_universo_12
+  - first:
+      213: -2755259800871456190
+    second: Limite_do_universo_13
+  - first:
+      213: 7425562124598049497
+    second: Limite_do_universo_14
+  - first:
+      213: 7626392549592791299
+    second: Limite_do_universo_15
+  - first:
+      213: 8932951474018493549
+    second: Limite_do_universo_16
+  - first:
+      213: -5619754283962316343
+    second: Limite_do_universo_17
+  - first:
+      213: -7789033045555359633
+    second: Limite_do_universo_18
+  - first:
+      213: -1070760712124048334
+    second: Limite_do_universo_19
+  - first:
+      213: -2779050604752563263
+    second: Limite_do_universo_20
+  - first:
+      213: -4661169873839877478
+    second: Limite_do_universo_21
+  - first:
+      213: 2010687231397287191
+    second: Limite_do_universo_22
+  - first:
+      213: 1994892084231461593
+    second: Limite_do_universo_23
+  - first:
+      213: -754160210123346934
+    second: Limite_do_universo_24
+  - first:
+      213: 8276481136015921893
+    second: Limite_do_universo_25
+  - first:
+      213: -1072557470236271958
+    second: Limite_do_universo_26
+  - first:
+      213: 8718229016070570072
+    second: Limite_do_universo_27
+  - first:
+      213: -6663173318950183960
+    second: Limite_do_universo_28
+  - first:
+      213: 865311914366178283
+    second: Limite_do_universo_29
+  - first:
+      213: -562734026557056457
+    second: Limite_do_universo_30
+  - first:
+      213: 5907189894697029803
+    second: Limite_do_universo_31
+  - first:
+      213: 5340956288731430699
+    second: Limite_do_universo_32
+  - first:
+      213: 1354417372639350253
+    second: Limite_do_universo_33
+  - first:
+      213: 1317586349168521995
+    second: Limite_do_universo_34
+  - first:
+      213: -1567545835294627031
+    second: Limite_do_universo_35
+  - first:
+      213: 5534285225717287037
+    second: Limite_do_universo_36
+  - first:
+      213: 7330539480117250385
+    second: Limite_do_universo_37
+  - first:
+      213: -2703746379603024589
+    second: Limite_do_universo_38
+  - first:
+      213: 1624482780736541768
+    second: Limite_do_universo_39
+  - first:
+      213: -8283253597175886729
+    second: Limite_do_universo_40
+  - first:
+      213: -2002604611604619482
+    second: Limite_do_universo_41
+  - first:
+      213: 3144574916538397113
+    second: Limite_do_universo_42
+  - first:
+      213: 5346868985176930644
+    second: Limite_do_universo_43
+  - first:
+      213: 9047505543155646746
+    second: Limite_do_universo_44
+  - first:
+      213: -3490580631093287679
+    second: Limite_do_universo_45
+  - first:
+      213: 5130508525806775985
+    second: Limite_do_universo_46
+  - first:
+      213: 2699517423536992717
+    second: Limite_do_universo_47
+  - first:
+      213: -4566913114000046143
+    second: Limite_do_universo_48
+  - first:
+      213: -1351633771413772565
+    second: Limite_do_universo_49
+  - first:
+      213: 6440754604814056678
+    second: Limite_do_universo_50
+  - first:
+      213: 905906982988614510
+    second: Limite_do_universo_51
+  - first:
+      213: 8432975805320631405
+    second: Limite_do_universo_52
+  - first:
+      213: -1857734328278532309
+    second: Limite_do_universo_53
+  - first:
+      213: 6429242323932719819
+    second: Limite_do_universo_54
+  - first:
+      213: -6095356836695669515
+    second: Limite_do_universo_55
+  - first:
+      213: 4761710795598777561
+    second: Limite_do_universo_56
+  - first:
+      213: 596767480043682067
+    second: Limite_do_universo_57
+  - first:
+      213: -385258690733038475
+    second: Limite_do_universo_58
+  - first:
+      213: 8332401229084561792
+    second: Limite_do_universo_59
+  - first:
+      213: -6329031827988927649
+    second: Limite_do_universo_60
+  - first:
+      213: 5529223855908644039
+    second: Limite_do_universo_61
+  - first:
+      213: -1658808895688892901
+    second: Limite_do_universo_62
+  - first:
+      213: 4427151287607906549
+    second: Limite_do_universo_63
+  - first:
+      213: -7535733673424884767
+    second: Limite_do_universo_64
+  - first:
+      213: 8145725152087753058
+    second: Limite_do_universo_65
+  - first:
+      213: 6815838097434569753
+    second: Limite_do_universo_66
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +242,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +276,1440 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Limite_do_universo_0
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2365
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b21128e6586b540800000000000000
+      internalID: 5023349144053427035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2365
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007543ab9ff285560800000000000000
+      internalID: 7302639545398613760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709c590a2ca7840e0800000000000000
+      internalID: -2285441834554111737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5c4f73a35dbf540800000000000000
+      internalID: 5042858653795009965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8753e432471d593b0800000000000000
+      internalID: -5506264672651823752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3785c7dddb691a8e0800000000000000
+      internalID: -1683899043450955661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_6
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e4c818e37fb8e10800000000000000
+      internalID: 2201124690734108180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca2a08b17350bd50800000000000000
+      internalID: 6750987589312457417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_8
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acafca297e721c460800000000000000
+      internalID: 7260127949849688778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_9
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7e609a4661d4f30800000000000000
+      internalID: 4561326619184523174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_10
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2109
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ed47226af0a7de0800000000000000
+      internalID: -1334737133344858590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8229823b45b645aa0800000000000000
+      internalID: -6173191177690901976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ea169e85124ba90800000000000000
+      internalID: -7299172430304399828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242b4212fc953c9d0800000000000000
+      internalID: -2755259800871456190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daf246f865ec0760800000000000000
+      internalID: 7425562124598049497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_15
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309f9241e9366d960800000000000000
+      internalID: 7626392549592791299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64acac690838fb70800000000000000
+      internalID: 8932951474018493549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_17
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c94273e04f9202b0800000000000000
+      internalID: -5619754283962316343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_18
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60d4ef86bbc7e390800000000000000
+      internalID: -7789033045555359633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_19
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1853
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cd6623ec4e321f0800000000000000
+      internalID: -1070760712124048334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c393e2f234de69d0800000000000000
+      internalID: -2779050604752563263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92950812b2305fb0800000000000000
+      internalID: -4661169873839877478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71559d5426567eb10800000000000000
+      internalID: 2010687231397287191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_23
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dadaddf7c74fab10800000000000000
+      internalID: 1994892084231461593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_24
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c2ddbd84fa885f0800000000000000
+      internalID: -754160210123346934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_25
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e253761eb7fbd270800000000000000
+      internalID: 8276481136015921893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_26
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1069d9a28d11f0800000000000000
+      internalID: -1072557470236271958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_27
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850c365591f5df870800000000000000
+      internalID: 8718229016070570072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_28
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1597
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb1d1f5b27a783a0800000000000000
+      internalID: -6663173318950183960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be395bbf994320c00800000000000000
+      internalID: 865311914366178283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a9a046264c038f0800000000000000
+      internalID: -562734026557056457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0913e59ed8af150800000000000000
+      internalID: 5907189894697029803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fb9be6273ee1a40800000000000000
+      internalID: 5340956288731430699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_33
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded49c5ac6bdbc210800000000000000
+      internalID: 1354417372639350253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_34
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03f71fbdc1094210800000000000000
+      internalID: 1317586349168521995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_35
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bee163e55fe3ae0800000000000000
+      internalID: -1567545835294627031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_36
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d784294471bbdcc40800000000000000
+      internalID: 5534285225717287037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_37
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1341
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1598d5c71de4bb560800000000000000
+      internalID: 7330539480117250385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33563092efc5a7ad0800000000000000
+      internalID: -2703746379603024589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8445a817b725b8610800000000000000
+      internalID: 1624482780736541768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_40
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ccadb6db8fb0d80800000000000000
+      internalID: -8283253597175886729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f5fbb47b15534e0800000000000000
+      internalID: -2002604611604619482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_42
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1ffd5d936c3ab20800000000000000
+      internalID: 3144574916538397113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_43
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459360a5305e33a40800000000000000
+      internalID: 5346868985176930644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_44
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a118b231b523f8d70800000000000000
+      internalID: 9047505543155646746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_45
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10563dfe867fe8fc0800000000000000
+      internalID: -3490580631093287679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_46
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be63d5525a333740800000000000000
+      internalID: 5130508525806775985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_47
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc176e64bcc967520800000000000000
+      internalID: 2699517423536992717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_48
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1085
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c744f728b01f90c0800000000000000
+      internalID: -4566913114000046143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6e5740f380e3de0800000000000000
+      internalID: -1351633771413772565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec37614038226950800000000000000
+      internalID: 6440754604814056678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b0590f99d629c00800000000000000
+      internalID: 905906982988614510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64999ba0d2f70570800000000000000
+      internalID: 8432975805320631405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fb8eb98700836e0800000000000000
+      internalID: -1857734328278532309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaaaec74d1493950800000000000000
+      internalID: 6429242323932719819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_55
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f481896041f86ba0800000000000000
+      internalID: -6095356836695669515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_56
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dccece6dbef41240800000000000000
+      internalID: 4761710795598777561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_57
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319328d7cd4284800800000000000000
+      internalID: 596767480043682067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574a930134947aaf0800000000000000
+      internalID: -385258690733038475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_59
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0811d9955c2a2a370800000000000000
+      internalID: 8332401229084561792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_60
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 829
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b2498c513ca28a0800000000000000
+      internalID: -6329031827988927649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_61
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 573
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4ec074dcfbbbc40800000000000000
+      internalID: 5529223855908644039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_62
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 573
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e943e191abaf8e0800000000000000
+      internalID: -1658808895688892901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_63
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 573
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f058c8d3a6607d30800000000000000
+      internalID: 4427151287607906549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_64
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 573
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6f896622bb6790800000000000000
+      internalID: -7535733673424884767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_65
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 317
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261c7203edd6b0170800000000000000
+      internalID: 8145725152087753058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Limite_do_universo_66
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 317
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c692443a8b69e50800000000000000
+      internalID: 6815838097434569753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
