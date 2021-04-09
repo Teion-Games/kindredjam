@@ -7,22 +7,24 @@ public class PlayerPower : MonoBehaviour
 
     public GameObject firstPower;
     public GameObject secondPower;
-    public Transform firstPowerDownPosition, firstPowerUpPosition, firstPowerLeftPosition, firstPowerRightPosition;
+    public Transform firstPowerDownPosition, firstPowerUpPosition, firstPowerSidePosition;
+    GameObject powerGo;
+
     public void UsePower()
     {
         switch (GetComponent<PlayerAnimation>().facing)
         {
             case "Down":
-                Instantiate(firstPower, firstPowerDownPosition.position, Quaternion.identity);
+                powerGo = Instantiate(firstPower, firstPowerDownPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
                 break;
             case "Up":
-                Instantiate(firstPower, firstPowerUpPosition.position, Quaternion.identity);
+                powerGo = Instantiate(firstPower, firstPowerUpPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
                 break;
-            case "Left":
-                Instantiate(firstPower, firstPowerLeftPosition.position, Quaternion.identity);
-                break;
-            case "Right":
-                Instantiate(firstPower, firstPowerRightPosition.position, Quaternion.identity);
+            case "Side":
+                powerGo = Instantiate(firstPower, firstPowerSidePosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
                 break;
         }
     }
@@ -30,5 +32,10 @@ public class PlayerPower : MonoBehaviour
     public void UseSecundaryPower()
     {
         Instantiate(secondPower, transform.position, Quaternion.identity);
+    }
+
+    public void DestroyFirstPower()
+    {
+        Destroy(powerGo);
     }
 }

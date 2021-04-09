@@ -11,14 +11,16 @@ public class PlayerInput : MonoBehaviour
     float _horizontalMove;
     float _verticalMove;
 
-
     PlayerInputActions inputActions;
     
     void Start()
     {
         inputActions = new PlayerInputActions();
         if(CheckPlayer())  inputActions.Player.Enable();
-        else inputActions.Player2.Enable();
+        else 
+        {
+            inputActions.Player2.Enable();
+        }
     }
 
     void Update()
@@ -50,10 +52,17 @@ public class PlayerInput : MonoBehaviour
     void GetPlayer2Inputs()
     {
         GetPlayer2MovmentInput();
+
         if(inputActions.Player2.Power.triggered)
         {
             GetComponent<PlayerPower>().UsePower();
         }
+
+        if(inputActions.Player2.ReleasePower.triggered)
+        {
+            GetComponent<PlayerPower>().DestroyFirstPower();
+        }
+
         if(inputActions.Player2.SecundaryPower.triggered) 
         {
             GetComponent<PlayerPower>().UseSecundaryPower();

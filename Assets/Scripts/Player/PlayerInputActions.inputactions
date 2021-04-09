@@ -158,6 +158,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "ReleasePower",
+                    "type": "Button",
+                    "id": "d49bef76-06a4-408e-a61d-ebda5d9215a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "SecundaryPower",
                     "type": "Button",
                     "id": "2de00904-8f63-487a-ad0e-71e5d7d324a3",
@@ -237,7 +245,7 @@
                     "name": "",
                     "id": "dd7a60b1-5a7a-4489-b10a-d56050971f0c",
                     "path": "<Keyboard>/q",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Power",
@@ -252,6 +260,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SecundaryPower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "848a97c9-9fc5-4bf5-8ad6-de49f24488e1",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ReleasePower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

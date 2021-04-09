@@ -734,36 +734,6 @@ Transform:
   m_Father: {fileID: 1178692474}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &821055531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 821055532}
-  m_Layer: 0
-  m_Name: LeftPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &821055532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821055531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.75, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1178692474}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &868179846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,36 +1279,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1022732331
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1022732332}
-  m_Layer: 0
-  m_Name: LeftPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1022732332
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022732331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.12, y: -0.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1498421129}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028369222
 GameObject:
@@ -1934,7 +1874,6 @@ Transform:
   - {fileID: 767855226}
   - {fileID: 1906389470}
   - {fileID: 1410677872}
-  - {fileID: 821055532}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1976,7 +1915,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.96, y: 4.703944}
+    oldSize: {x: 2.07, y: 4.011618}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1997,12 +1936,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8760e439ab6afcc4cabbbee7f9d8a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstPower: {fileID: 1485256955556593348, guid: f360634c8e444664aa96379e857838ed, type: 3}
+  firstPower: {fileID: 7369186097294103068, guid: 334e51e49dc46b743a86ab1ad58300e4, type: 3}
   secondPower: {fileID: 5191299592676774859, guid: 6bead1978838fa441b0bdb5b4b472977, type: 3}
   firstPowerDownPosition: {fileID: 767855226}
   firstPowerUpPosition: {fileID: 1410677872}
-  firstPowerLeftPosition: {fileID: 821055532}
-  firstPowerRightPosition: {fileID: 1906389470}
+  firstPowerSidePosition: {fileID: 1906389470}
 --- !u!114 &1178692478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2150,7 +2088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469643480}
   m_Layer: 0
-  m_Name: RightPosition
+  m_Name: SidePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2284,7 +2222,6 @@ Transform:
   - {fileID: 1381483671}
   - {fileID: 1469643480}
   - {fileID: 204247452}
-  - {fileID: 1022732332}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2351,8 +2288,7 @@ MonoBehaviour:
   secondPower: {fileID: 7772933481712536009, guid: 6c1edb2c724439549ba2554acf60cd44, type: 3}
   firstPowerDownPosition: {fileID: 1381483671}
   firstPowerUpPosition: {fileID: 204247452}
-  firstPowerLeftPosition: {fileID: 1022732332}
-  firstPowerRightPosition: {fileID: 1469643480}
+  firstPowerSidePosition: {fileID: 1469643480}
 --- !u!114 &1498421133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2470,7 +2406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906389470}
   m_Layer: 0
-  m_Name: RightPosition
+  m_Name: SidePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

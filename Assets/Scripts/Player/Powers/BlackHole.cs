@@ -7,15 +7,19 @@ public class BlackHole : MonoBehaviour
     public float suckRange;
     public LayerMask suckableObjects;
     public float suckSpeed;
+    public bool isBlackHole;
 
     void Start()
     {
-        BlackHole[] blackHoles = FindObjectsOfType<BlackHole>();
-        foreach (BlackHole bh in blackHoles)
+        if(isBlackHole)
         {
-            if(bh.gameObject!=this.gameObject)
+            BlackHole[] blackHoles = FindObjectsOfType<BlackHole>();
+            foreach (BlackHole bh in blackHoles)
             {
-                Destroy(bh.gameObject);
+                if(bh.gameObject!=this.gameObject && bh.isBlackHole)
+                {
+                    Destroy(bh.gameObject);
+                }
             }
         }
     }

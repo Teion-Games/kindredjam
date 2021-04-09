@@ -171,6 +171,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
+                    ""name"": ""ReleasePower"",
+                    ""type"": ""Button"",
+                    ""id"": ""d49bef76-06a4-408e-a61d-ebda5d9215a2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
                     ""name"": ""SecundaryPower"",
                     ""type"": ""Button"",
                     ""id"": ""2de00904-8f63-487a-ad0e-71e5d7d324a3"",
@@ -250,7 +258,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""dd7a60b1-5a7a-4489-b10a-d56050971f0c"",
                     ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Power"",
@@ -265,6 +273,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""SecundaryPower"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""848a97c9-9fc5-4bf5-8ad6-de49f24488e1"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ReleasePower"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -284,6 +303,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Player2_Horizontal = m_Player2.FindAction("Horizontal", throwIfNotFound: true);
         m_Player2_Vertical = m_Player2.FindAction("Vertical", throwIfNotFound: true);
         m_Player2_Power = m_Player2.FindAction("Power", throwIfNotFound: true);
+        m_Player2_ReleasePower = m_Player2.FindAction("ReleasePower", throwIfNotFound: true);
         m_Player2_SecundaryPower = m_Player2.FindAction("SecundaryPower", throwIfNotFound: true);
     }
 
@@ -394,6 +414,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player2_Horizontal;
     private readonly InputAction m_Player2_Vertical;
     private readonly InputAction m_Player2_Power;
+    private readonly InputAction m_Player2_ReleasePower;
     private readonly InputAction m_Player2_SecundaryPower;
     public struct Player2Actions
     {
@@ -402,6 +423,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Horizontal => m_Wrapper.m_Player2_Horizontal;
         public InputAction @Vertical => m_Wrapper.m_Player2_Vertical;
         public InputAction @Power => m_Wrapper.m_Player2_Power;
+        public InputAction @ReleasePower => m_Wrapper.m_Player2_ReleasePower;
         public InputAction @SecundaryPower => m_Wrapper.m_Player2_SecundaryPower;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
@@ -421,6 +443,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
                 @Power.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
                 @Power.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPower;
+                @ReleasePower.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
+                @ReleasePower.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
+                @ReleasePower.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
                 @SecundaryPower.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSecundaryPower;
                 @SecundaryPower.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSecundaryPower;
                 @SecundaryPower.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSecundaryPower;
@@ -437,6 +462,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started += instance.OnPower;
                 @Power.performed += instance.OnPower;
                 @Power.canceled += instance.OnPower;
+                @ReleasePower.started += instance.OnReleasePower;
+                @ReleasePower.performed += instance.OnReleasePower;
+                @ReleasePower.canceled += instance.OnReleasePower;
                 @SecundaryPower.started += instance.OnSecundaryPower;
                 @SecundaryPower.performed += instance.OnSecundaryPower;
                 @SecundaryPower.canceled += instance.OnSecundaryPower;
@@ -456,6 +484,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnHorizontal(InputAction.CallbackContext context);
         void OnVertical(InputAction.CallbackContext context);
         void OnPower(InputAction.CallbackContext context);
+        void OnReleasePower(InputAction.CallbackContext context);
         void OnSecundaryPower(InputAction.CallbackContext context);
     }
 }
