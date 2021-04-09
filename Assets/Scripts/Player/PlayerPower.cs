@@ -31,11 +31,14 @@ public class PlayerPower : MonoBehaviour
                 powerGo.transform.parent = transform;
                 break;
         }
+
+        GetComponent<PlayerAnimation>().AttackAnimation();
     }
 
     public void UseSecundaryPower()
     {
         Instantiate(secondPower, transform.position, Quaternion.identity);
+        GetComponent<PlayerAnimation>().AttackAnimation();
     }
 
     public void DestroyFirstPower()

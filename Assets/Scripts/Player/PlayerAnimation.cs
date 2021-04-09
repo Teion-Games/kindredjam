@@ -61,4 +61,9 @@ public class PlayerAnimation : MonoBehaviour
             facing = "Right";
         }
     }
+
+    public void AttackAnimation()
+    {
+        anim.SetTrigger("Attack");
+    }
 }
