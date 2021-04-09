@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: 1837618811236005342
     second: Haw-idle-lado_15
+  - first:
+      213: 8231149541984378831
+    second: Haw-idle-lado_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -193,27 +196,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Haw-idle-lado_2
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 105
-        width: 7
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 124fc4d2abccd6320800000000000000
-      internalID: 2552921663784940577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Haw-idle-lado_3
       rect:
         serializedVersion: 2
@@ -251,27 +233,6 @@ TextureImporter:
       bones: []
       spriteID: cdf47f67151fc2f40800000000000000
       internalID: 5705200160162140124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_5
-      rect:
-        serializedVersion: 2
-        x: 1012
-        y: 112
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4783d9fc97d7cafa0800000000000000
-      internalID: -5788113458950227852
       vertices: []
       indices: 
       edges: []
@@ -356,132 +317,6 @@ TextureImporter:
       bones: []
       spriteID: 35cb3dc5b779a9e40800000000000000
       internalID: 5664006037465971795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_10
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 67
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c4d6d93407dd1350800000000000000
-      internalID: 5989179492622849220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_11
-      rect:
-        serializedVersion: 2
-        x: 1739
-        y: 66
-        width: 4
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae6386089ba3e0df0800000000000000
-      internalID: -212167564042160406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_12
-      rect:
-        serializedVersion: 2
-        x: 1724
-        y: 60
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 031360f48c75a9690800000000000000
-      internalID: -7594661303776038608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_13
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 35
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59c5f89f5c8eb1180800000000000000
-      internalID: -9143458681452536683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_14
-      rect:
-        serializedVersion: 2
-        x: 1256
-        y: 27
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a2992feb4e7666a0800000000000000
-      internalID: -6456334151188901211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Haw-idle-lado_15
-      rect:
-        serializedVersion: 2
-        x: 1506
-        y: 33
-        width: 5
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed53c4c9298808910800000000000000
-      internalID: 1837618811236005342
       vertices: []
       indices: 
       edges: []
