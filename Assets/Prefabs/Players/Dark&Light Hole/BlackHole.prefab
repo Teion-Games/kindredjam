@@ -98,6 +98,6 @@ MonoBehaviour:
   suckRange: 4
   suckableObjects:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   suckSpeed: 5
   isBlackHole: 1

@@ -44,6 +44,10 @@ public class BlackHole : MonoBehaviour
     {
         foreach (Collider2D objectCollider in objectsInRange)
         {
+            if(objectCollider.gameObject.tag=="Player1")
+            {
+                FindObjectOfType<KillPlayer>().KillThePlayer();
+            }
             Vector2 directionToMove = transform.position - objectCollider.transform.position;
             if(Mathf.Abs(directionToMove.x)>0.1f||Mathf.Abs(directionToMove.y)>0.1f)
             {

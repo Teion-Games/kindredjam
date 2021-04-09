@@ -98,5 +98,5 @@ MonoBehaviour:
   effectRange: 4
   suckableObjects:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2560
   spitSpeed: 4
