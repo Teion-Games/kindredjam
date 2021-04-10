@@ -288,6 +288,52 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""GameMisc"",
+            ""id"": ""2e4636b7-ed09-4099-9fc5-4363ae47652d"",
+            ""actions"": [
+                {
+                    ""name"": ""DialoguePass"",
+                    ""type"": ""Button"",
+                    ""id"": ""b295b318-a2a7-4d5f-b8cb-d60e68180546"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""8ed11432-ebd2-4bb4-b51f-cff83e1d70b6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""7208112c-4183-4427-804b-e2f61ec2f855"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DialoguePass"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6550af30-b017-4aa2-b328-1e2a23237779"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -305,6 +351,10 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Player2_Power = m_Player2.FindAction("Power", throwIfNotFound: true);
         m_Player2_ReleasePower = m_Player2.FindAction("ReleasePower", throwIfNotFound: true);
         m_Player2_SecundaryPower = m_Player2.FindAction("SecundaryPower", throwIfNotFound: true);
+        // GameMisc
+        m_GameMisc = asset.FindActionMap("GameMisc", throwIfNotFound: true);
+        m_GameMisc_DialoguePass = m_GameMisc.FindAction("DialoguePass", throwIfNotFound: true);
+        m_GameMisc_Pause = m_GameMisc.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -472,6 +522,47 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         }
     }
     public Player2Actions @Player2 => new Player2Actions(this);
+
+    // GameMisc
+    private readonly InputActionMap m_GameMisc;
+    private IGameMiscActions m_GameMiscActionsCallbackInterface;
+    private readonly InputAction m_GameMisc_DialoguePass;
+    private readonly InputAction m_GameMisc_Pause;
+    public struct GameMiscActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public GameMiscActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @DialoguePass => m_Wrapper.m_GameMisc_DialoguePass;
+        public InputAction @Pause => m_Wrapper.m_GameMisc_Pause;
+        public InputActionMap Get() { return m_Wrapper.m_GameMisc; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GameMiscActions set) { return set.Get(); }
+        public void SetCallbacks(IGameMiscActions instance)
+        {
+            if (m_Wrapper.m_GameMiscActionsCallbackInterface != null)
+            {
+                @DialoguePass.started -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnDialoguePass;
+                @DialoguePass.performed -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnDialoguePass;
+                @DialoguePass.canceled -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnDialoguePass;
+                @Pause.started -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_GameMiscActionsCallbackInterface.OnPause;
+            }
+            m_Wrapper.m_GameMiscActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @DialoguePass.started += instance.OnDialoguePass;
+                @DialoguePass.performed += instance.OnDialoguePass;
+                @DialoguePass.canceled += instance.OnDialoguePass;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
+            }
+        }
+    }
+    public GameMiscActions @GameMisc => new GameMiscActions(this);
     public interface IPlayerActions
     {
         void OnHorizontal(InputAction.CallbackContext context);
@@ -486,5 +577,10 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnPower(InputAction.CallbackContext context);
         void OnReleasePower(InputAction.CallbackContext context);
         void OnSecundaryPower(InputAction.CallbackContext context);
+    }
+    public interface IGameMiscActions
+    {
+        void OnDialoguePass(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

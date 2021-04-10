@@ -16,7 +16,11 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         inputActions = new PlayerInputActions();
-        if(CheckPlayer())  inputActions.Player.Enable();
+        if(CheckPlayer())  
+        {
+            inputActions.Player.Enable();
+            inputActions.GameMisc.Enable();
+        }
         else 
         {
             inputActions.Player2.Enable();
@@ -25,15 +29,27 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if(CheckPlayer())
+        if(FindObjectOfType<DialogueManager>().dialogIsOn)
         {
-            GetPlayer1Inputs();
+            _horizontalMove = 0f;
+            _verticalMove = 0f;
+            if(inputActions.GameMisc.DialoguePass.triggered)
+            {
+                Debug.Log("triggered");
+                FindObjectOfType<DialogueManager>().DisplayNextSentence();
+            }
         }
         else
         {
-            GetPlayer2Inputs();
-        }
-        
+             if(CheckPlayer())
+            {
+                GetPlayer1Inputs();
+            }
+            else
+            {
+                GetPlayer2Inputs();
+            }
+        } 
     }
 
     void GetPlayer1Inputs()
