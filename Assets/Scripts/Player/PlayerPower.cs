@@ -37,7 +37,25 @@ public class PlayerPower : MonoBehaviour
 
     public void UseSecundaryPower()
     {
-        Instantiate(secondPower, transform.position, Quaternion.identity);
+        switch (GetComponent<PlayerAnimation>().facing)
+        {
+            case "Down":
+                powerGo = Instantiate(secondPower, firstPowerDownPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
+                break;
+            case "Up":
+                powerGo = Instantiate(secondPower, firstPowerUpPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
+                break;
+            case "Left":
+                powerGo = Instantiate(secondPower, firstPowerLeftPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
+                break;
+            case "Right":
+                powerGo = Instantiate(secondPower, firstPowerRightPosition.position, Quaternion.identity);
+                powerGo.transform.parent = transform;
+                break;
+        }
         GetComponent<PlayerAnimation>().AttackAnimation();
     }
 
