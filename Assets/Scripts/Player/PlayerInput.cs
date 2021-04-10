@@ -16,15 +16,7 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         inputActions = new PlayerInputActions();
-        if(CheckPlayer())  
-        {
-            inputActions.Player.Enable();
-            inputActions.GameMisc.Enable();
-        }
-        else 
-        {
-            inputActions.Player2.Enable();
-        }
+        EnableControls();
     }
 
     void Update()
@@ -35,12 +27,30 @@ public class PlayerInput : MonoBehaviour
             _verticalMove = 0f;
             if(inputActions.GameMisc.DialoguePass.triggered)
             {
-                Debug.Log("triggered");
                 FindObjectOfType<DialogueManager>().DisplayNextSentence();
             }
         }
         else
         {
+            if(inputActions.GameMisc.Pause.triggered)
+            {
+                if(FindObjectOfType<PauseMenu>().isShowingCards)
+                {
+                    FindObjectOfType<PauseMenu>().HideCardsMenu();
+                }
+                else
+                {
+                    if(FindObjectOfType<PauseMenu>().HandlePauseandResume())
+                    {
+                        inputActions.Player.Disable();
+                        inputActions.Player2.Disable();
+                    }
+                    else
+                    {
+                        EnableControls();
+                    } 
+                }
+            }
              if(CheckPlayer())
             {
                 GetPlayer1Inputs();
@@ -108,6 +118,19 @@ public class PlayerInput : MonoBehaviour
         else
         {
             _verticalMove = 0f;
+        }
+    }
+
+    public void EnableControls()
+    {
+        if(CheckPlayer())  
+        {
+            inputActions.Player.Enable();
+            inputActions.GameMisc.Enable();
+        }
+        else 
+        {
+            inputActions.Player2.Enable();
         }
     }
 

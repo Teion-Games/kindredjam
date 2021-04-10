@@ -8,7 +8,7 @@ public class BlackHole : MonoBehaviour
     public LayerMask suckableObjects;
     public float suckSpeed;
     public bool isBlackHole;
-
+    
     void Start()
     {
         if(isBlackHole)
