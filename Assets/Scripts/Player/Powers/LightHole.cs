@@ -7,15 +7,19 @@ public class LightHole : MonoBehaviour
     public float effectRange;
     public LayerMask suckableObjects;
     public float spitSpeed;
+    public bool destroyItself;
 
      void Start()
     {
-        LightHole[] lightHoles = FindObjectsOfType<LightHole>();
-        foreach (LightHole lh in lightHoles)
+        if(destroyItself)
         {
-            if(lh.gameObject!=this.gameObject)
+            LightHole[] lightHoles = FindObjectsOfType<LightHole>();
+            foreach (LightHole lh in lightHoles)
             {
-                Destroy(lh.gameObject);
+                if(lh.gameObject!=this.gameObject)
+                {
+                    Destroy(lh.gameObject);
+                }
             }
         }
     }
