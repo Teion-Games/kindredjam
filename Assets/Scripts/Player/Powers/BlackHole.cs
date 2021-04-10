@@ -8,7 +8,7 @@ public class BlackHole : MonoBehaviour
     public LayerMask suckableObjects;
     public float suckSpeed;
     public bool isBlackHole;
-    
+
     void Start()
     {
         if(isBlackHole)
@@ -46,7 +46,7 @@ public class BlackHole : MonoBehaviour
         {
             if(objectCollider.gameObject.tag=="Player1")
             {
-                FindObjectOfType<KillPlayer>().KillThePlayer();
+                FindObjectOfType<KillPlayer>().KillThePlayer(objectCollider.gameObject);
             }
             Vector2 directionToMove = transform.position - objectCollider.transform.position;
             if(Mathf.Abs(directionToMove.x)>0.1f||Mathf.Abs(directionToMove.y)>0.1f)

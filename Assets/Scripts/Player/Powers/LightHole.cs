@@ -46,7 +46,7 @@ public class LightHole : MonoBehaviour
         {
             if(objectCollider.gameObject.tag=="Player2")
             {
-                FindObjectOfType<KillPlayer>().KillThePlayer();
+                FindObjectOfType<KillPlayer>().KillThePlayer(objectCollider.gameObject);
             }
             
             Vector2 directionToMove = transform.position - objectCollider.transform.position;
