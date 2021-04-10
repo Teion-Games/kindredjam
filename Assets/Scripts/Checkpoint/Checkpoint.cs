@@ -8,7 +8,7 @@ public class Checkpoint : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag=="Player")
+        if(other.gameObject.tag=="Player1" || other.gameObject.tag=="Player2")
         {
             PlayerPrefs.SetFloat("p1Xpos", p1SavePosition.x);
             PlayerPrefs.SetFloat("p1Ypos", p1SavePosition.y);

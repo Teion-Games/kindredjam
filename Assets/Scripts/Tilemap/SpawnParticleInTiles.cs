@@ -8,6 +8,7 @@ public class SpawnParticleInTiles : MonoBehaviour
     
     Tilemap tilemap;
     public GameObject particleEffect;
+    public Vector2 offset;
 
     void Start()
     {
@@ -20,7 +21,8 @@ public class SpawnParticleInTiles : MonoBehaviour
             for (int y = 0; y < bounds.size.y; y++) {
                 TileBase tile = allTiles[x + y * bounds.size.x];
                 if (tile != null) {
-                    Instantiate(particleEffect, tilemap.CellToWorld(new Vector3Int(x,y,0)), Quaternion.identity);
+                    Vector3 spawnPosition = new Vector3(tilemap.CellToWorld(new Vector3Int(x,y,0)).x-offset.x, tilemap.CellToWorld(new Vector3Int(x,y,0)).y-offset.y, 0f);
+                    Instantiate(particleEffect, spawnPosition, Quaternion.identity);
                 } 
             }
         }        
