@@ -34,6 +34,18 @@ public class AltarBothPlayers : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag=="Player1")
+        {
+            waitingForP2.SetActive(false);
+        }
+
+        if(other.gameObject.tag=="Player2")
+        {
+            waitingForP1.SetActive(false);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
