@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public Image portrait;
     public bool dialogIsOn = false;
+    public Animator anim;
 
     Dialogue[] currentListOfDialogues;
     int currentDialogue = 0;
@@ -23,7 +24,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialogues)
     {   
-        //animation p aparece
+        if(currentDialogue == 0) anim.SetBool("isOpen", true);
         dialogIsOn = true;
         sentencesToDisplay.Clear();
         currentListOfDialogues = dialogues;
@@ -74,8 +75,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("Ending the dialogue");
-        //animation pra sumir
+        anim.SetBool("isOpen", false);
         currentDialogue = 0;
         dialogIsOn = false;
     }
