@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseCanvas, cardsMenu;
     public bool isPaused;
     public bool isShowingCards;
-
-    void Awake()
+    public GameObject resumeButton;
+    void Start()
     {
         pauseCanvas.SetActive(false);
     }
@@ -30,6 +31,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseCanvas.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(resumeButton);
     }
 
     public void Resume()
