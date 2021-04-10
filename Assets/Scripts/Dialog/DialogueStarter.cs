@@ -12,6 +12,7 @@ public class DialogueStarter : MonoBehaviour
         if(other.gameObject.tag=="Player1" || other.gameObject.tag=="Player2")
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            Destroy(gameObject);
         }
     }
 }
