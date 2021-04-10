@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1602538c20110f54fb1576eaa6d62f0d, type: 3}
-  m_Name: 4.
+  m_Name: locked
   m_EditorClassIdentifier: 
-  cardName: The first Meet
-  description: 
-  cardImage: {fileID: 21300000, guid: 80db62d1c13005f488936fb0628e9cb1, type: 3}
+  cardName: ???
+  description: ???????????
+  cardImage: {fileID: 21300000, guid: c9ab311d567e64b4f9f384b2ebf6aca6, type: 3}
