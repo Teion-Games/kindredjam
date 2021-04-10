@@ -20,7 +20,7 @@ public class SpawnParticleInTiles : MonoBehaviour
             for (int y = 0; y < bounds.size.y; y++) {
                 TileBase tile = allTiles[x + y * bounds.size.x];
                 if (tile != null) {
-                    Instantiate(particleEffect, new Vector2(x, y), Quaternion.identity);
+                    Instantiate(particleEffect, tilemap.CellToWorld(new Vector3Int(x,y,0)), Quaternion.identity);
                 } 
             }
         }        
