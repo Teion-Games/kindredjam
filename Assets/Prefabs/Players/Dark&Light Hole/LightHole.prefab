@@ -100,3 +100,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2560
   spitSpeed: 4
+  destroyItself: 1
