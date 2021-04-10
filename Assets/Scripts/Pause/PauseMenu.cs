@@ -8,6 +8,10 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
     public bool isShowingCards;
 
+    void Awake()
+    {
+        pauseCanvas.SetActive(false);
+    }
     public bool HandlePauseandResume()
     {
         isPaused = !isPaused;
