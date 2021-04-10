@@ -82,11 +82,13 @@ public class PlayerInput : MonoBehaviour
         if(inputActions.Player2.Power.triggered)
         {
             GetComponent<PlayerPower>().UsePower();
+            GetComponent<PlayerPower>().HoldParticlePlay();
         }
 
         if(inputActions.Player2.ReleasePower.triggered)
         {
             GetComponent<PlayerPower>().DestroyFirstPower();
+             GetComponent<PlayerPower>().HoldParticleStop();
         }
 
         if(inputActions.Player2.SecundaryPower.triggered) 
