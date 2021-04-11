@@ -16,7 +16,7 @@ public class LightHole : MonoBehaviour
             LightHole[] lightHoles = FindObjectsOfType<LightHole>();
             foreach (LightHole lh in lightHoles)
             {
-                if(lh.gameObject!=this.gameObject)
+                if(lh.gameObject!=this.gameObject && lh.destroyItself)
                 {
                     Destroy(lh.gameObject);
                 }
