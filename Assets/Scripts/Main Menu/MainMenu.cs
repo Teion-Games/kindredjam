@@ -13,10 +13,6 @@ public class MainMenu : MonoBehaviour
         game.SetActive(true);
     }
 
-    public void Settings(){
-        settings.SetActive(true);
-    }
-
     public void Credits(){
         credits.SetActive(true);
     }

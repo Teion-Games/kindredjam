@@ -4,54 +4,36 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class AltarBothPlayers : MonoBehaviour
+public class AltarBrain : MonoBehaviour
 {
-    bool interactingP1, interactingP2;
+    public bool interactingP1, interactingP2;
     public Vector2 p1NextCheckPoint, p2NextCheckpoint;
     public GameObject waitingForP2, waitingForP1;
     public string nextSceneName;
     
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.tag=="Player1")
-        {
-            interactingP1 = true;
-            waitingForP1.SetActive(false);
-            if(interactingP2 == false)
-            {
-                waitingForP2.SetActive(true);
-            }
-        }
-
-        if(other.gameObject.tag=="Player2")
-        {
-            interactingP2 = true;
-            waitingForP2.SetActive(false);
-            if(interactingP1 == false)
-            {
-                waitingForP1.SetActive(true);
-            }
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if(other.gameObject.tag=="Player1")
-        {
-            waitingForP2.SetActive(false);
-        }
-
-        if(other.gameObject.tag=="Player2")
-        {
-            waitingForP1.SetActive(false);
-        }
-    }
     // Update is called once per frame
     void Update()
     {
         if(interactingP1 && interactingP2)
         {
+            waitingForP1.SetActive(false);
+            waitingForP2.SetActive(false);
             GoToNextPhase();
+        } 
+        else if(interactingP1 && !interactingP2)
+        {
+            waitingForP1.SetActive(false);
+            waitingForP2.SetActive(true);
+        }
+        else if(!interactingP1 && interactingP2)
+        {
+            waitingForP1.SetActive(true);
+            waitingForP2.SetActive(false);
+        }
+        else if(!interactingP1 && !interactingP2)
+        {
+            waitingForP1.SetActive(false);
+            waitingForP2.SetActive(false);
         }
     }
 
