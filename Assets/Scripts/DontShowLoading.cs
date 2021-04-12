@@ -7,7 +7,7 @@ public class DontShowLoading : MonoBehaviour
     bool isFirstLoading = true;
     public GameObject loadingScreen, fadeInScreen;
     #region Singleton
-    private static DontShowLoadingScreen instance;
+    public static DontShowLoading instance;
     void Awake()
     {
         if (instance == null)
