@@ -28,14 +28,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "SecundaryPower",
-                    "type": "Button",
-                    "id": "52205eb2-8786-4625-91aa-92b43a352ce1",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -115,17 +107,6 @@
                     "action": "Power",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f41ec9a8-b2e9-454f-ac51-a383b59e728b",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SecundaryPower",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -161,14 +142,6 @@
                     "name": "ReleasePower",
                     "type": "Button",
                     "id": "d49bef76-06a4-408e-a61d-ebda5d9215a2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "SecundaryPower",
-                    "type": "Button",
-                    "id": "2de00904-8f63-487a-ad0e-71e5d7d324a3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -249,17 +222,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Power",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f14326dc-6ef1-4eb3-b230-1ac39bc74495",
-                    "path": "<Keyboard>/rightShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SecundaryPower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
