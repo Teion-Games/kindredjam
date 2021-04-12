@@ -68,10 +68,6 @@ public class PlayerInput : MonoBehaviour
         {
             GetComponent<PlayerPower>().UsePower();
         }
-        if(inputActions.Player.SecundaryPower.triggered) 
-        {
-            GetComponent<PlayerPower>().UseSecundaryPower();
-        }
     }
 
     void GetPlayer2Inputs()
@@ -90,10 +86,6 @@ public class PlayerInput : MonoBehaviour
              GetComponent<PlayerPower>().HoldParticleStop();
         }
 
-        if(inputActions.Player2.SecundaryPower.triggered) 
-        {
-            GetComponent<PlayerPower>().UseSecundaryPower();
-        }
     }
 
     void GetPlayer1MovmentInput()
