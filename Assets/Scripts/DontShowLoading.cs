@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontShowLoadingScreen : MonoBehaviour
+public class DontShowLoading : MonoBehaviour
 {
     bool isFirstLoading = true;
     public GameObject loadingScreen, fadeInScreen;
