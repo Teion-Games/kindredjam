@@ -18,7 +18,7 @@ public class GameMaster : MonoBehaviour
     }
     }
     #endregion
-    public GameObject fadeScreen;
+    public GameObject fadeDeathScreen, fadeNextScreen;
     void Start()
     {
         

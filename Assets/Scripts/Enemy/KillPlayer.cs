@@ -39,7 +39,7 @@ public class KillPlayer : MonoBehaviour
         Destroy(player.GetComponent<PlayerMovment>());
         Destroy(player.GetComponent<PlayerPower>());
         yield return new WaitForSeconds(0.5f);
-        GameMaster.instance.fadeScreen.SetActive(true);
+        GameMaster.instance.fadeDeathScreen.SetActive(true);
 
     }
 }
