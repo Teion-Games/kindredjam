@@ -5,6 +5,7 @@ using UnityEngine;
 public class GetCard : MonoBehaviour
 {
     public int index;
+    public GameObject dicaVisualPrefab;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,6 +19,7 @@ public class GetCard : MonoBehaviour
     public void PlayerGetCard(int cardIndex)
     {
         PlayerPrefs.SetInt("card"+cardIndex, 1);
+        Instantiate(dicaVisualPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
