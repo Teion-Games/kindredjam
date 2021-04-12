@@ -1,37 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class DontShowLoading : MonoBehaviour
 {
-    bool isFirstLoading = true;
-    public GameObject loadingScreen, fadeInScreen;
+    bool firstLoadingPassed;
     #region Singleton
     public static DontShowLoading instance;
-    void Awake()
+    void Start()
     {
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(this);
+            foreach (sceneLoading sceneLoading in FindObjectsOfType<sceneLoading>())
+            {
+                if(sceneLoading.gameObject.name == "Loading")
+                {
+                    Debug.Log("startando loading");
+                    sceneLoading.StartAnimation();
+                }
+            }
         }
         else
         {
             Destroy(gameObject);
+            foreach (sceneLoading sceneLoading in FindObjectsOfType<sceneLoading>())
+            {
+                if (sceneLoading.gameObject.name=="fadeIn")
+                {
+                    Debug.Log("startando fadein");
+                    sceneLoading.StartAnimation();
+                }
+            }
         }
 
-        if(isFirstLoading)
-        {
-            loadingScreen.SetActive(true);
-        }
-        else
-        {
-            fadeInScreen.SetActive(true);
-        }
     }
     #endregion
 
-    
+
     // Update is called once per frame
     public void DestroyDontShowLoading()
     {

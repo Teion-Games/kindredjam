@@ -10,6 +10,7 @@ public class TurnOnBothPlayers : MonoBehaviour
         foreach (PlayerInput playerInput in FindObjectsOfType<PlayerInput>())
         {
             playerInput.EnableControls();
+            gameObject.SetActive(false);
         }
         
     }
