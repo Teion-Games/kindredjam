@@ -19,7 +19,7 @@ public class GetCard : MonoBehaviour
     public void PlayerGetCard(int cardIndex)
     {
         PlayerPrefs.SetInt("card"+cardIndex, 1);
-        Instantiate(dicaVisualPrefab, transform.position, Quaternion.identity);
+        dicaVisualPrefab.SetActive(true);
         Destroy(gameObject);
     }
 }

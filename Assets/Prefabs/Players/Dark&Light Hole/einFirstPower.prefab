@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01318b6f733498043b4f49e98cd2be4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 150
+  explosionForce: 20
   explosionRadius: 3.7
   effectedObjects:
     serializedVersion: 2

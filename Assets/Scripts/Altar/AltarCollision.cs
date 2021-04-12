@@ -21,6 +21,7 @@ public class AltarCollision : MonoBehaviour
             FindObjectOfType<AltarBrain>().interactingP2 = true;
             particle.GetComponent<ParticleSystem>().Play();
         }
+        FindObjectOfType<AltarBrain>().UpdateHUD();
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -33,8 +34,9 @@ public class AltarCollision : MonoBehaviour
 
         if(other.gameObject.tag=="Player2")
         {
-            FindObjectOfType<AltarBrain>().interactingP1 = false;
+            FindObjectOfType<AltarBrain>().interactingP2 = false;
             particle.GetComponent<ParticleSystem>().Stop();
         }
+        FindObjectOfType<AltarBrain>().UpdateHUD();
     }
 }

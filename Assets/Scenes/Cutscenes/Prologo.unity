@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00d741cb466eb64db55d1bcc124a6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Tutorial
+  sceneName: Intro 1
 --- !u!1 &39151755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,8 +1518,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1900471268}
-  - component: {fileID: 1900471270}
   - component: {fileID: 1900471269}
+  - component: {fileID: 1900471270}
   m_Layer: 0
   m_Name: Haw
   m_TagString: Untagged
@@ -1582,15 +1582,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 768743505326195374, guid: 16e78dc1eb66cea46b6cb487daa735a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.07, y: 4.191691}
+  m_Size: {x: 2.21, y: 4.0016146}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1900471270
@@ -1603,7 +1603,7 @@ Animator:
   m_GameObject: {fileID: 1900471267}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c26641ed38aec724aabe4e4d074ae03d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7cf2f2029b3062e4c88d91c4d0b0f731, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

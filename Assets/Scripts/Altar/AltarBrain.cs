@@ -12,7 +12,13 @@ public class AltarBrain : MonoBehaviour
     public string nextSceneName;
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        waitingForP1.SetActive(false);
+        waitingForP2.SetActive(false);
+    }
+
+    public void UpdateHUD()
     {
         if(interactingP1 && interactingP2)
         {

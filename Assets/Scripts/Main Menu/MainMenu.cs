@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public GameObject game;
     public GameObject settings;
     public GameObject credits;
+    public GameObject cards;
 
     public void Play(){
         game.SetActive(true);
@@ -15,6 +16,10 @@ public class MainMenu : MonoBehaviour
 
     public void Credits(){
         credits.SetActive(true);
+    }
+
+    public void Cards(){
+        cards.SetActive(true);
     }
 
     public void Quit(){
