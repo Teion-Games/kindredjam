@@ -1008,7 +1008,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7275062690582898151, guid: 6884c69626030924aa0bffb072235884, type: 3}
       propertyPath: m_text
-      value: Act 1
+      value: Prologue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275062690582898151, guid: 6884c69626030924aa0bffb072235884, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468296289399674615, guid: 6884c69626030924aa0bffb072235884, type: 3}
+      propertyPath: m_text
+      value: Part 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6884c69626030924aa0bffb072235884, type: 3}
@@ -11294,7 +11302,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 0, b: 0, a: 0.3764706}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_Origin: {x: -96, y: -77, z: 0}
   m_Size: {x: 297, y: 122, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
