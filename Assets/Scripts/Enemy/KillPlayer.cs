@@ -35,11 +35,11 @@ public class KillPlayer : MonoBehaviour
         Destroy(player.GetComponent<PlayerInput>());
         Destroy(player.GetComponent<Rigidbody2D>());
         Destroy(player.GetComponent<Collider2D>());
-         Destroy(player.GetComponent<PlayerAnimation>());
-          Destroy(player.GetComponent<PlayerMovment>());
-           Destroy(player.GetComponent<PlayerPower>());
+        Destroy(player.GetComponent<PlayerAnimation>());
+        Destroy(player.GetComponent<PlayerMovment>());
+        Destroy(player.GetComponent<PlayerPower>());
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameMaster.instance.fadeScreen.SetActive(true);
 
     }
 }
