@@ -10,4 +10,5 @@ public class Card : ScriptableObject
     [TextArea(3, 10)]
     public string description;
     public Sprite cardImage;
+    public Sprite cardBackground;
 }

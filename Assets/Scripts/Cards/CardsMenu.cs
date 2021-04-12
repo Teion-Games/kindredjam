@@ -11,6 +11,7 @@ public class CardsMenu : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
     public Image cardImage;
+    public Image cardBackground;
     public TextMeshProUGUI pageText;
     int currentCard = 0;
     public List<Card> cardList = new List<Card>();
@@ -75,12 +76,14 @@ public class CardsMenu : MonoBehaviour
             nameText.text = cardList[currentCard].cardName;
             descriptionText.text = cardList[currentCard].description;
             cardImage.sprite = cardList[currentCard].cardImage;
+            cardBackground.sprite = cardList[currentCard].cardBackground;
         }
         else
         {
             nameText.text = questionMarkCard.cardName;
             descriptionText.text = questionMarkCard.description;
             cardImage.sprite = questionMarkCard.cardImage;
+            cardBackground.sprite = questionMarkCard.cardBackground;
         }
     }
 }

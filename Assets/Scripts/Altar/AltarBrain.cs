@@ -50,7 +50,6 @@ public class AltarBrain : MonoBehaviour
         PlayerPrefs.SetFloat("p1Ypos", p1NextCheckPoint.y);
         PlayerPrefs.SetFloat("p2Xpos", p2NextCheckpoint.x);
         PlayerPrefs.SetFloat("p2Ypos", p2NextCheckpoint.y);
-        DontShowLoadingScreen.instance.DestroyDontShowLoading();
         GameMaster.instance.fadeNextScreen.SetActive(true);
     }
 }
