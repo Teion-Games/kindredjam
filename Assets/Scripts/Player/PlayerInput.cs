@@ -16,7 +16,6 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         inputActions = new PlayerInputActions();
-        EnableControls();
     }
 
     void Update()
