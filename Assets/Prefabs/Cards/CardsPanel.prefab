@@ -848,6 +848,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 834f592053b0a18498436c7b079dd3a2, type: 2}
   - {fileID: 11400000, guid: 908c12890e5418142a4a2cc332f31f70, type: 2}
   - {fileID: 11400000, guid: dc37d463e0be6ea47a57d10b3b1b74b3, type: 2}
+  - {fileID: 11400000, guid: 42420cba94a32a34ca814d4d7f2b26b0, type: 2}
+  - {fileID: 11400000, guid: 4e8ace4ebe8e1ef48adcf25db1631796, type: 2}
+  - {fileID: 11400000, guid: 2d18c90b8afaaad488af908ad9c0a4ed, type: 2}
+  - {fileID: 11400000, guid: a9642082d0dcbea42b3dc5e7ab226e48, type: 2}
+  - {fileID: 11400000, guid: 0ef7230f8a8cc3a479a9a74bfa9350a9, type: 2}
+  - {fileID: 11400000, guid: 1cf2259012341184e8b707cf8ffc66ee, type: 2}
   questionMarkCard: {fileID: 11400000, guid: 45570d6ca686c104e93d1fb8948b3ff3, type: 2}
 --- !u!1 &5734443198492297639
 GameObject:

@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: 10.
   m_EditorClassIdentifier: 
   cardName: Death
-  description: 
+  description: Even I, who was created to hold their memories and their will, know
+    what happened to them after this. But, you know, I think they're having fun somewhere.
+    Gods can't die, you know...
   cardImage: {fileID: 21300000, guid: 73ee5f32a33282348bbe8335e0d31578, type: 3}

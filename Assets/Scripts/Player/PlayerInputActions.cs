@@ -354,6 +354,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""BackToMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""1ea14f18-05d8-4cdb-8683-642a6bdba807"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -398,6 +406,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""GoBackwards"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cb1b51d7-0c79-493f-aa0e-51dbd64ba0db"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BackToMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -572,6 +591,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_CardMenu = asset.FindActionMap("CardMenu", throwIfNotFound: true);
         m_CardMenu_GoForward = m_CardMenu.FindAction("GoForward", throwIfNotFound: true);
         m_CardMenu_GoBackwards = m_CardMenu.FindAction("GoBackwards", throwIfNotFound: true);
+        m_CardMenu_BackToMenu = m_CardMenu.FindAction("BackToMenu", throwIfNotFound: true);
         // PauseMenu
         m_PauseMenu = asset.FindActionMap("PauseMenu", throwIfNotFound: true);
         m_PauseMenu_Move = m_PauseMenu.FindAction("Move", throwIfNotFound: true);
@@ -790,12 +810,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private ICardMenuActions m_CardMenuActionsCallbackInterface;
     private readonly InputAction m_CardMenu_GoForward;
     private readonly InputAction m_CardMenu_GoBackwards;
+    private readonly InputAction m_CardMenu_BackToMenu;
     public struct CardMenuActions
     {
         private @PlayerInputActions m_Wrapper;
         public CardMenuActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @GoForward => m_Wrapper.m_CardMenu_GoForward;
         public InputAction @GoBackwards => m_Wrapper.m_CardMenu_GoBackwards;
+        public InputAction @BackToMenu => m_Wrapper.m_CardMenu_BackToMenu;
         public InputActionMap Get() { return m_Wrapper.m_CardMenu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -811,6 +833,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @GoBackwards.started -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnGoBackwards;
                 @GoBackwards.performed -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnGoBackwards;
                 @GoBackwards.canceled -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnGoBackwards;
+                @BackToMenu.started -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnBackToMenu;
+                @BackToMenu.performed -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnBackToMenu;
+                @BackToMenu.canceled -= m_Wrapper.m_CardMenuActionsCallbackInterface.OnBackToMenu;
             }
             m_Wrapper.m_CardMenuActionsCallbackInterface = instance;
             if (instance != null)
@@ -821,6 +846,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @GoBackwards.started += instance.OnGoBackwards;
                 @GoBackwards.performed += instance.OnGoBackwards;
                 @GoBackwards.canceled += instance.OnGoBackwards;
+                @BackToMenu.started += instance.OnBackToMenu;
+                @BackToMenu.performed += instance.OnBackToMenu;
+                @BackToMenu.canceled += instance.OnBackToMenu;
             }
         }
     }
@@ -890,6 +918,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     {
         void OnGoForward(InputAction.CallbackContext context);
         void OnGoBackwards(InputAction.CallbackContext context);
+        void OnBackToMenu(InputAction.CallbackContext context);
     }
     public interface IPauseMenuActions
     {

@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: 3.
   m_EditorClassIdentifier: 
   cardName: Dark Spot
-  description: 
+  description: Ein and Haw were completely different. Their toughts... Their actions...
+    Haw saw Ein as a pure creature, with no evil at all. But someday, Haw realized
+    that, even for the most pure of the existence, may have some chaos inside.
   cardImage: {fileID: 21300000, guid: 09d4cb4294504b042b33712d8e31e9d3, type: 3}

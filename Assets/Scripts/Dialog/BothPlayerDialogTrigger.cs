@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class BothPlayerDialogTrigger : MonoBehaviour
 {
-    public GameObject particle;
     bool interactingP1, interactingP2;
     public Dialogue[] dialogue;
 

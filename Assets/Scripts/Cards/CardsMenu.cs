@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class CardsMenu : MonoBehaviour
 {
@@ -56,6 +56,15 @@ public class CardsMenu : MonoBehaviour
                 pageToShow = cardList.Count;
             }
         }
+
+        if(inputActions.CardMenu.BackToMenu.triggered)
+        {
+            if(SceneManager.GetActiveScene().name == "Cards")
+            {
+                SceneManager.LoadScene("Menu");
+            }
+        }
+
         DisplayCurrentCard();
     }
 

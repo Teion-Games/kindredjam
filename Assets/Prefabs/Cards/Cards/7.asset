@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   cardName: Mind
-  description: 
+  description: The life was starting to grow, little organisms could survive at this
+    moment. Ein and Haw were very happy seeing the universe starting to get filled
+    with life.
   cardImage: {fileID: 21300000, guid: 49833d77aad0d8949a580d2342894d20, type: 3}

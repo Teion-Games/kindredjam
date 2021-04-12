@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1602538c20110f54fb1576eaa6d62f0d, type: 3}
   m_Name: 2.
   m_EditorClassIdentifier: 
-  cardName: Bright Spot
-  description: 
-  cardImage: {fileID: 21300000, guid: 8cb6379652ef31c4b8baad91656a981a, type: 3}
+  cardName: The first Meet
+  description: '"Who are you?!" Ein said. Both of them thought they were alone in
+    the universe. Haw pretended to not look surprise. After that moment, they started
+    to live together and have fun with the empty universe.'
+  cardImage: {fileID: 21300000, guid: 80db62d1c13005f488936fb0628e9cb1, type: 3}

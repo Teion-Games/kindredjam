@@ -341,6 +341,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "BackToMenu",
+                    "type": "Button",
+                    "id": "1ea14f18-05d8-4cdb-8683-642a6bdba807",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -385,6 +393,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "GoBackwards",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb1b51d7-0c79-493f-aa0e-51dbd64ba0db",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BackToMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: 6.
   m_EditorClassIdentifier: 
   cardName: Ambient
-  description: 
+  description: The Universe wasn't empty anymore. There was a vast variety of inanimate
+    existences. "The Universe is not empty anymore, but there's no one which we can
+    talk yet."
   cardImage: {fileID: 21300000, guid: 544e69bae4165a54eaa6bcd65f169138, type: 3}
