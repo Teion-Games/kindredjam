@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1602538c20110f54fb1576eaa6d62f0d, type: 3}
+  m_Name: 5.
+  m_EditorClassIdentifier: 
+  cardName: Body
+  description: Haw and Ein at this moment were into create things. "Can you imagine
+    this universe filled with other existence than us?" said Haw. The matter was
+    somehow reacting to their urge.
+  cardImage: {fileID: 21300000, guid: 0b3d8d371445f7948ad8c1d6e42cfd2e, type: 3}
