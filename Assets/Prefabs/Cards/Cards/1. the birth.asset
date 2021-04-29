@@ -16,4 +16,4 @@ MonoBehaviour:
   description: At the beginning... there was nothing. Ein and Haw were the first
     ones in this universe. Some would say they created everything else.
   cardImage: {fileID: 21300000, guid: 7ca8f3b67662bed44bcfdc995c6306dd, type: 3}
-  cardBackground: {fileID: 21300000, guid: b76faf6640e63244b88417843a629ab7, type: 3}
+  cardBackground: {fileID: 21300000, guid: 030cdabd299c83141b6f5ab23ea847ab, type: 3}

@@ -17,3 +17,4 @@ MonoBehaviour:
     Haw saw Ein as a pure creature, with no evil at all. But someday, Haw realized
     that, even for the most pure of the existence, may have some chaos inside.
   cardImage: {fileID: 21300000, guid: 09d4cb4294504b042b33712d8e31e9d3, type: 3}
+  cardBackground: {fileID: 21300000, guid: dfbf8c610a2d09748bf60393e9ab81b4, type: 3}

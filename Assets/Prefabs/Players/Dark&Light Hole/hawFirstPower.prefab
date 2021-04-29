@@ -95,9 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072b1311a4db37145b2e7193400a16e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suckRange: 4
+  suckRange: 6
   suckableObjects:
     serializedVersion: 2
     m_Bits: 512
-  suckSpeed: 5
+  suckSpeed: 10
   isBlackHole: 0

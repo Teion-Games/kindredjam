@@ -18,3 +18,4 @@ MonoBehaviour:
     not that kind of existence... They, someday, decided to split. "I think we should
     see all the life we can and than change our experiences!" Haw was cheerful.
   cardImage: {fileID: 21300000, guid: 6917eebdcca587944bb15fa79d86bacf, type: 3}
+  cardBackground: {fileID: 21300000, guid: b76faf6640e63244b88417843a629ab7, type: 3}

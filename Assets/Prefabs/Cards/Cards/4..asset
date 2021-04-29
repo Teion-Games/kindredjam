@@ -17,3 +17,4 @@ MonoBehaviour:
     think they could live together and become friends. But soon, he realized that
     every existence is different and good in its own way.
   cardImage: {fileID: 21300000, guid: 8cb6379652ef31c4b8baad91656a981a, type: 3}
+  cardBackground: {fileID: 21300000, guid: 05760eb416da2cf45b063dcef6b7acd7, type: 3}

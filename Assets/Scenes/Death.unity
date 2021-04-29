@@ -140,6 +140,10 @@ PrefabInstance:
       value: FuriaUniverso - Pequeno
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
       value: 12
       objectReference: {fileID: 0}
@@ -704,6 +708,10 @@ PrefabInstance:
       value: FuriaUniverso - Pequeno (7)
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
       value: 12
       objectReference: {fileID: 0}
@@ -930,6 +938,10 @@ PrefabInstance:
     - target: {fileID: 758494439282001218, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: m_Name
       value: FuriaUniverso - Pequeno (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
@@ -1406,6 +1418,10 @@ PrefabInstance:
       value: FuriaUniverso - Pequeno (4)
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
       value: 12
       objectReference: {fileID: 0}
@@ -1758,6 +1774,10 @@ PrefabInstance:
     - target: {fileID: 758494439282001218, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: m_Name
       value: FuriaUniverso - Pequeno (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
@@ -23789,6 +23809,10 @@ PrefabInstance:
       value: FuriaUniverso - Pequeno (1)
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
       value: 12
       objectReference: {fileID: 0}
@@ -23940,7 +23964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507262638404872439, guid: 93036111067b6614ca4c4c0065fb35f7, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93036111067b6614ca4c4c0065fb35f7, type: 3}
@@ -24017,6 +24041,10 @@ PrefabInstance:
       value: FuriaUniverso - Pequeno (2)
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
       value: 12
       objectReference: {fileID: 0}
@@ -24076,6 +24104,10 @@ PrefabInstance:
     - target: {fileID: 758494439282001218, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: m_Name
       value: FuriaUniverso - Pequeno (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange
@@ -24797,6 +24829,10 @@ PrefabInstance:
     - target: {fileID: 758494439282001218, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: m_Name
       value: FuriaUniverso - Pequeno (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 758494439282001219, guid: 551b9686941e6ce4a814750a7a5cffdd, type: 3}
       propertyPath: movementRange

@@ -17,3 +17,4 @@ MonoBehaviour:
     clever. Started to live in groups. Haw and Ein never showed up for those creatures.
     Afraid of how they would react.
   cardImage: {fileID: 21300000, guid: 0ed969aed6d2d4d40aac6e83d4b7404a, type: 3}
+  cardBackground: {fileID: 21300000, guid: f04c8ca2e4a05c94cac894e31ad0cd9c, type: 3}
