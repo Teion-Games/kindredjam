@@ -9,21 +9,6 @@ public class BlackHole : MonoBehaviour
     public float suckSpeed;
     public bool isBlackHole;
 
-    void Start()
-    {
-        if(isBlackHole)
-        {
-            BlackHole[] blackHoles = FindObjectsOfType<BlackHole>();
-            foreach (BlackHole bh in blackHoles)
-            {
-                if(bh.gameObject!=this.gameObject && bh.isBlackHole)
-                {
-                    Destroy(bh.gameObject);
-                }
-            }
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -44,14 +29,18 @@ public class BlackHole : MonoBehaviour
     {
         foreach (Collider2D objectCollider in objectsInRange)
         {
-            if(objectCollider.gameObject.tag=="Player1")
+            if(objectCollider.gameObject.tag=="Player1" && isBlackHole)
             {
                 FindObjectOfType<KillPlayer>().KillThePlayer(objectCollider.gameObject);
             }
             Vector2 directionToMove = transform.position - objectCollider.transform.position;
-            if(Mathf.Abs(directionToMove.x)>0.1f||Mathf.Abs(directionToMove.y)>0.1f)
+            if(Mathf.Abs(directionToMove.x)>Mathf.Abs(directionToMove.y) && Mathf.Abs(directionToMove.x)>0.1f)
             {
-                objectCollider.GetComponent<Rigidbody2D>().velocity = directionToMove.normalized * suckSpeed;
+                objectCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(directionToMove.x, 0f) * suckSpeed;
+            }
+            else if (Mathf.Abs(directionToMove.y)>Mathf.Abs(directionToMove.x)  && Mathf.Abs(directionToMove.y)>0.1f)
+            {
+                objectCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, directionToMove.y) * suckSpeed;
             }
             else
             {

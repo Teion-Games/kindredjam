@@ -19,7 +19,6 @@ public class DontShowLoading : MonoBehaviour
             {
                 if(sceneLoading.gameObject.name == "Loading")
                 {
-                    Debug.Log("startando loading");
                     sceneLoading.StartAnimation();
                 }
             }
@@ -31,7 +30,6 @@ public class DontShowLoading : MonoBehaviour
             {
                 if (sceneLoading.gameObject.name=="fadeIn")
                 {
-                    Debug.Log("startando fadein");
                     sceneLoading.StartAnimation();
                 }
             }

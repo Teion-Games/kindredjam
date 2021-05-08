@@ -27,7 +27,16 @@ public class Explosion : MonoBehaviour
         foreach (Collider2D objectCollider in objectsInRange)
         {
             Vector2 directionToMove = transform.position - objectCollider.transform.position;
-            objectCollider.GetComponent<Rigidbody2D>().AddForce(-directionToMove * explosionForce, ForceMode2D.Impulse);
+            if(Mathf.Abs(directionToMove.x)>Mathf.Abs(directionToMove.y))
+            {
+                Vector2 directionVector = new Vector2(-directionToMove.x, 0f);
+                objectCollider.GetComponent<Rigidbody2D>().AddForce(directionVector * explosionForce, ForceMode2D.Impulse);
+            }
+            else
+            {
+                Vector2 directionVector = new Vector2( 0f ,-directionToMove.y);
+                objectCollider.GetComponent<Rigidbody2D>().AddForce(directionVector * explosionForce, ForceMode2D.Impulse);
+            }
         }
     }
 

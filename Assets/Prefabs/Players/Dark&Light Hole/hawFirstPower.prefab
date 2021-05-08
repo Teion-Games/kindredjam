@@ -99,5 +99,5 @@ MonoBehaviour:
   suckableObjects:
     serializedVersion: 2
     m_Bits: 512
-  suckSpeed: 5
+  suckSpeed: 3
   isBlackHole: 0
