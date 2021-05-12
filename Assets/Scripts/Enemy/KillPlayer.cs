@@ -31,15 +31,13 @@ public class KillPlayer : MonoBehaviour
     {
         GameObject particle = player.transform.Find("Dying").gameObject;
         particle.GetComponent<ParticleSystem>().Play();
-        Destroy(player.GetComponent<SpriteRenderer>());
-        Destroy(player.GetComponent<PlayerInput>());
-        Destroy(player.GetComponent<Rigidbody2D>());
-        Destroy(player.GetComponent<Collider2D>());
-        Destroy(player.GetComponent<PlayerAnimation>());
-        Destroy(player.GetComponent<PlayerMovment>());
-        Destroy(player.GetComponent<PlayerPower>());
+        player.GetComponent<SpriteRenderer>().enabled = false;
+        player.GetComponent<PlayerInput>().enabled = false;
+        player.GetComponent<Collider2D>().enabled = false;
+        player.GetComponent<PlayerAnimation>().enabled = false;
+        player.GetComponent<PlayerMovment>().enabled = false;
+        player.GetComponent<PlayerPower>().enabled = false;
         yield return new WaitForSeconds(0.5f);
         GameMaster.instance.fadeDeathScreen.SetActive(true);
-
     }
 }

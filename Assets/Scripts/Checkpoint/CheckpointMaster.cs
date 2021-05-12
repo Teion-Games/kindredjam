@@ -6,7 +6,14 @@ public class CheckpointMaster : MonoBehaviour
 {
 
     public bool resetGame;
+
     void Start()
+    {
+        LoadCheckPoint(true);
+    }
+
+
+    public void LoadCheckPoint(bool isStartPhase)
     {
         if(resetGame)
         {
@@ -25,7 +32,19 @@ public class CheckpointMaster : MonoBehaviour
                     player.transform.position = new Vector2(PlayerPrefs.GetFloat("p1Xpos"), PlayerPrefs.GetFloat("p1Ypos"));
                 }
             }
+        } 
+        else if(!isStartPhase)
+        {
+            PlayerInput[] players = FindObjectsOfType<PlayerInput>();
+            foreach (PlayerInput player in players)
+            {
+                if(player.gameObject.name == "Ein")
+                {
+                    player.transform.position = player.GetComponent<PlayerMovment>().startingPos;
+                }
+            }
         }
+
         if(PlayerPrefs.GetFloat("p2Xpos")!=0 && PlayerPrefs.GetFloat("p2Ypos")!=0)
         {
             PlayerInput[] players = FindObjectsOfType<PlayerInput>();
@@ -37,6 +56,16 @@ public class CheckpointMaster : MonoBehaviour
                 }
             }
         }
+        else if(!isStartPhase)
+        {
+            PlayerInput[] players = FindObjectsOfType<PlayerInput>();
+            foreach (PlayerInput player in players)
+            {
+                if(player.gameObject.name == "Haw")
+                {
+                    player.transform.position = player.GetComponent<PlayerMovment>().startingPos;
+                }
+            }
+        }
     }
-
 }

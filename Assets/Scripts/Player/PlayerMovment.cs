@@ -6,10 +6,12 @@ public class PlayerMovment : MonoBehaviour
 {
     [SerializeField] float vel;
     Rigidbody2D rb;
+    public Vector2 startingPos;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();    
+        rb = GetComponent<Rigidbody2D>();
+        startingPos = transform.position;
     }
 
     
