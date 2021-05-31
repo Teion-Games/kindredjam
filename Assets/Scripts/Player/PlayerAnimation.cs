@@ -66,4 +66,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         anim.SetTrigger("Attack");
     }
+
+    public void DeathRestart()
+    {
+        anim.SetTrigger("Death");
+    }
 }

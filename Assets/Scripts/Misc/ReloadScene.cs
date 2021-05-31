@@ -20,6 +20,7 @@ public class ReloadScene : MonoBehaviour
             playerInp.GetComponent<PlayerAnimation>().enabled = true;
             playerInp.GetComponent<PlayerMovment>().enabled = true;
             playerInp.GetComponent<PlayerPower>().enabled = true;
+            playerInp.GetComponent<PlayerAnimation>().DeathRestart();
         }
         FindObjectOfType<CheckpointMaster>().LoadCheckPoint(false);
 
