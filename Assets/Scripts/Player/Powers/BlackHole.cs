@@ -20,7 +20,7 @@ public class BlackHole : MonoBehaviour
         SuckObjects(DetectObjectsInRange());
     }
 
-    Collider2D[] DetectObjectsInRange()
+    public Collider2D[] DetectObjectsInRange()
     {
         return Physics2D.OverlapCircleAll(transform.position, suckRange, suckableObjects);
     }

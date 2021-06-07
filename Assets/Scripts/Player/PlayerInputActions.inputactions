@@ -28,6 +28,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Sincronia",
+                    "type": "Button",
+                    "id": "a4695909-b426-4d96-9cf3-4978ddf199fa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "SincroniaRelease",
+                    "type": "Button",
+                    "id": "4999ecae-ac03-4cb8-a7bb-e1eb0eb4a257",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -107,6 +123,28 @@
                     "action": "Power",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0fa03b5-a9c7-4f7c-a64b-ad340aceb53a",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sincronia",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a61ffd34-8c87-409f-806e-36fcf33299e4",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SincroniaRelease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -145,6 +183,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Sincronia",
+                    "type": "Button",
+                    "id": "2322f365-4bec-4812-ab7d-21fd56226c45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "SincroniaRelease",
+                    "type": "Button",
+                    "id": "96e5becf-d51f-4562-95ce-5dfaa0d46427",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)"
                 }
             ],
             "bindings": [
@@ -233,6 +287,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ReleasePower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a68781e7-45cc-4e4f-8707-500b5d646b61",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sincronia",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef5ebcf0-9d93-4d59-9a68-408a18ee2cbc",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SincroniaRelease",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

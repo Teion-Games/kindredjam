@@ -41,6 +41,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sincronia"",
+                    ""type"": ""Button"",
+                    ""id"": ""a4695909-b426-4d96-9cf3-4978ddf199fa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""SincroniaRelease"",
+                    ""type"": ""Button"",
+                    ""id"": ""4999ecae-ac03-4cb8-a7bb-e1eb0eb4a257"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +136,28 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Power"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d0fa03b5-a9c7-4f7c-a64b-ad340aceb53a"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sincronia"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a61ffd34-8c87-409f-806e-36fcf33299e4"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SincroniaRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -158,6 +196,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sincronia"",
+                    ""type"": ""Button"",
+                    ""id"": ""2322f365-4bec-4812-ab7d-21fd56226c45"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""SincroniaRelease"",
+                    ""type"": ""Button"",
+                    ""id"": ""96e5becf-d51f-4562-95ce-5dfaa0d46427"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
                 }
             ],
             ""bindings"": [
@@ -246,6 +300,28 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ReleasePower"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a68781e7-45cc-4e4f-8707-500b5d646b61"",
+                    ""path"": ""<Keyboard>/rightShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sincronia"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef5ebcf0-9d93-4d59-9a68-408a18ee2cbc"",
+                    ""path"": ""<Keyboard>/rightShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SincroniaRelease"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -537,12 +613,16 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Player_Horizontal = m_Player.FindAction("Horizontal", throwIfNotFound: true);
         m_Player_Vertical = m_Player.FindAction("Vertical", throwIfNotFound: true);
         m_Player_Power = m_Player.FindAction("Power", throwIfNotFound: true);
+        m_Player_Sincronia = m_Player.FindAction("Sincronia", throwIfNotFound: true);
+        m_Player_SincroniaRelease = m_Player.FindAction("SincroniaRelease", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Horizontal = m_Player2.FindAction("Horizontal", throwIfNotFound: true);
         m_Player2_Vertical = m_Player2.FindAction("Vertical", throwIfNotFound: true);
         m_Player2_Power = m_Player2.FindAction("Power", throwIfNotFound: true);
         m_Player2_ReleasePower = m_Player2.FindAction("ReleasePower", throwIfNotFound: true);
+        m_Player2_Sincronia = m_Player2.FindAction("Sincronia", throwIfNotFound: true);
+        m_Player2_SincroniaRelease = m_Player2.FindAction("SincroniaRelease", throwIfNotFound: true);
         // GameMisc
         m_GameMisc = asset.FindActionMap("GameMisc", throwIfNotFound: true);
         m_GameMisc_DialoguePass = m_GameMisc.FindAction("DialoguePass", throwIfNotFound: true);
@@ -608,6 +688,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Horizontal;
     private readonly InputAction m_Player_Vertical;
     private readonly InputAction m_Player_Power;
+    private readonly InputAction m_Player_Sincronia;
+    private readonly InputAction m_Player_SincroniaRelease;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -615,6 +697,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Horizontal => m_Wrapper.m_Player_Horizontal;
         public InputAction @Vertical => m_Wrapper.m_Player_Vertical;
         public InputAction @Power => m_Wrapper.m_Player_Power;
+        public InputAction @Sincronia => m_Wrapper.m_Player_Sincronia;
+        public InputAction @SincroniaRelease => m_Wrapper.m_Player_SincroniaRelease;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -633,6 +717,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
                 @Power.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
                 @Power.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @Sincronia.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincronia;
+                @Sincronia.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincronia;
+                @Sincronia.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincronia;
+                @SincroniaRelease.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincroniaRelease;
+                @SincroniaRelease.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincroniaRelease;
+                @SincroniaRelease.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSincroniaRelease;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -646,6 +736,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Power.started += instance.OnPower;
                 @Power.performed += instance.OnPower;
                 @Power.canceled += instance.OnPower;
+                @Sincronia.started += instance.OnSincronia;
+                @Sincronia.performed += instance.OnSincronia;
+                @Sincronia.canceled += instance.OnSincronia;
+                @SincroniaRelease.started += instance.OnSincroniaRelease;
+                @SincroniaRelease.performed += instance.OnSincroniaRelease;
+                @SincroniaRelease.canceled += instance.OnSincroniaRelease;
             }
         }
     }
@@ -658,6 +754,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player2_Vertical;
     private readonly InputAction m_Player2_Power;
     private readonly InputAction m_Player2_ReleasePower;
+    private readonly InputAction m_Player2_Sincronia;
+    private readonly InputAction m_Player2_SincroniaRelease;
     public struct Player2Actions
     {
         private @PlayerInputActions m_Wrapper;
@@ -666,6 +764,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Vertical => m_Wrapper.m_Player2_Vertical;
         public InputAction @Power => m_Wrapper.m_Player2_Power;
         public InputAction @ReleasePower => m_Wrapper.m_Player2_ReleasePower;
+        public InputAction @Sincronia => m_Wrapper.m_Player2_Sincronia;
+        public InputAction @SincroniaRelease => m_Wrapper.m_Player2_SincroniaRelease;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -687,6 +787,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @ReleasePower.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
                 @ReleasePower.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
                 @ReleasePower.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnReleasePower;
+                @Sincronia.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincronia;
+                @Sincronia.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincronia;
+                @Sincronia.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincronia;
+                @SincroniaRelease.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincroniaRelease;
+                @SincroniaRelease.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincroniaRelease;
+                @SincroniaRelease.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSincroniaRelease;
             }
             m_Wrapper.m_Player2ActionsCallbackInterface = instance;
             if (instance != null)
@@ -703,6 +809,12 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @ReleasePower.started += instance.OnReleasePower;
                 @ReleasePower.performed += instance.OnReleasePower;
                 @ReleasePower.canceled += instance.OnReleasePower;
+                @Sincronia.started += instance.OnSincronia;
+                @Sincronia.performed += instance.OnSincronia;
+                @Sincronia.canceled += instance.OnSincronia;
+                @SincroniaRelease.started += instance.OnSincroniaRelease;
+                @SincroniaRelease.performed += instance.OnSincroniaRelease;
+                @SincroniaRelease.canceled += instance.OnSincroniaRelease;
             }
         }
     }
@@ -843,6 +955,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnHorizontal(InputAction.CallbackContext context);
         void OnVertical(InputAction.CallbackContext context);
         void OnPower(InputAction.CallbackContext context);
+        void OnSincronia(InputAction.CallbackContext context);
+        void OnSincroniaRelease(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
@@ -850,6 +964,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnVertical(InputAction.CallbackContext context);
         void OnPower(InputAction.CallbackContext context);
         void OnReleasePower(InputAction.CallbackContext context);
+        void OnSincronia(InputAction.CallbackContext context);
+        void OnSincroniaRelease(InputAction.CallbackContext context);
     }
     public interface IGameMiscActions
     {

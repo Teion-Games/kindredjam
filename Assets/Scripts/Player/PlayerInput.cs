@@ -68,6 +68,16 @@ public class PlayerInput : MonoBehaviour
         {
             GetComponent<PlayerPower>().UsePower();
         }
+
+        if(inputActions.Player.Sincronia.triggered)
+        {
+            Sincronia.instance.p1Sync = true;
+        }
+
+        if(inputActions.Player.SincroniaRelease.triggered)
+        {
+            Sincronia.instance.p1Sync = false;
+        }
     }
 
     void GetPlayer2Inputs()
@@ -83,9 +93,18 @@ public class PlayerInput : MonoBehaviour
         if(inputActions.Player2.ReleasePower.triggered)
         {
             GetComponent<PlayerPower>().DestroyFirstPower();
-             GetComponent<PlayerPower>().HoldParticleStop();
+            GetComponent<PlayerPower>().HoldParticleStop();
         }
 
+        if(inputActions.Player2.Sincronia.triggered)
+        {
+            Sincronia.instance.p2Sync = true;
+        }
+
+        if(inputActions.Player2.SincroniaRelease.triggered)
+        {
+            Sincronia.instance.p2Sync = false;
+        }
     }
 
     void GetPlayer1MovmentInput()

@@ -47,7 +47,16 @@ public class PlayerPower : MonoBehaviour
 
     public void DestroyFirstPower()
     {
+        StopObjectsInRange();
         Destroy(powerGo);
+    }
+
+    void StopObjectsInRange()
+    {
+        foreach (Collider2D objectsInRange in powerGo.GetComponent<BlackHole>().DetectObjectsInRange())
+        {
+            objectsInRange.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
+        }
     }
 
     public void HoldParticlePlay()
